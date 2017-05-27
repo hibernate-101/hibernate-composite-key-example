@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    <class name="com.hibernate.model.PurchaseOrder" table="PURCHASE_ORDERS">
+    <composite-id name="billingAddress">
+    <key-property name="street" type="string" column="STREET"></key-property>
+    <key-property name="city" type="string" column="CITY"></key-property>
+    
+    </composite-id>
+    <property name="itemName" type="string" column="ITEMNAME"></property>
+    </class>
+    </hibernate-mapping>
